@@ -14,5 +14,5 @@ if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -
 	return;
 }
 
-fs.createReadStream('words.txt').pipe(process.stdout)
+fs.createReadStream(__dirname + '/words.txt').pipe(process.stdout)
 	.on('error', process.stderr.write.bind(process.stderr));
