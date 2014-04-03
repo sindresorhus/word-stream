@@ -1,4 +1,4 @@
-# word-stream [![Build Status](https://travis-ci.org/sindresorhus/word-stream.png?branch=master)](http://travis-ci.org/sindresorhus/word-stream)
+# word-stream [![Build Status](https://travis-ci.org/sindresorhus/word-stream.svg?branch=master)](https://travis-ci.org/sindresorhus/word-stream)
 
 > Returns a stream of English words from the [Letterpress Word List](https://github.com/atebits/Words/blob/master/Words/en.txt)
 
@@ -7,12 +7,12 @@ Useful if you're creating a word game or just want some words to work with.
 
 ## Install
 
-```
-npm install --save word-stream
+```bash
+$ npm install --save word-stream
 ```
 
 
-## Example
+## Usage
 
 ```js
 var wordStream = require('word-stream');
@@ -43,14 +43,14 @@ toArray(wordStream, function (wordArray) {
 
 You can also use it as a CLI app by installing it globally:
 
-```
-npm install --global word-stream
+```bash
+$ npm install --global word-stream
 ```
 
 ### Usage
 
-```
-❯ word-stream -h
+```bash
+$ word-stream --help
 
 word-stream
 or
@@ -60,4 +60,4 @@ word-stream > <output file>
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
