@@ -35,11 +35,10 @@
     "cli"
   ],
   "dependencies": {
-    "split": "~0.3.0",
-    "word-list": "~0.1.0"
+    "split": "^0.3.0",
+    "word-list": "^0.1.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "request": "~2.33.0"
+    "mocha": "*"
   }
 }
