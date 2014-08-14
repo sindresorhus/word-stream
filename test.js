@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var wordStream = require('./index');
+var wordStream = require('./');
 
 it('should return words', function (cb) {
 	wordStream.on('data', function (word) {

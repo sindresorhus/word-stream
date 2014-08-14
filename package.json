@@ -36,7 +36,7 @@
   ],
   "dependencies": {
     "split": "^0.3.0",
-    "word-list": "^0.1.0"
+    "word-list": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "*"

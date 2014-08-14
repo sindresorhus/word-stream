@@ -2,16 +2,26 @@
 'use strict';
 var fs = require('fs');
 var wordListPath = require('word-list');
+var pkg = require('./package.json');
+var argv = process.argv.slice(2);
 
-if (process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
-	console.log('word-stream');
-	console.log('or');
-	console.log('word-stream > <output file>');
+function help() {
+	console.log([
+		'',
+		'  ' + pkg.description,
+		'',
+		'  Usage',
+		'    word-stream'
+	].join('\n'));
+}
+
+if (argv.indexOf('--help') !== -1) {
+	help();
 	return;
 }
 
-if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -1) {
-	console.log(require('./package').version);
+if (argv.indexOf('--version') !== -1) {
+	console.log(pkg.version);
 	return;
 }
 

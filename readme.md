@@ -7,7 +7,7 @@ Useful if you're creating a word game or just want some words to work with.
 
 ## Install
 
-```bash
+```sh
 $ npm install --save word-stream
 ```
 
@@ -41,23 +41,18 @@ toArray(wordStream, function (wordArray) {
 
 ## CLI
 
-You can also use it as a CLI app by installing it globally:
-
-```bash
+```sh
 $ npm install --global word-stream
 ```
 
-### Usage
-
-```bash
+```sh
 $ word-stream --help
 
-word-stream
-or
-word-stream > <output file>
+  Usage
+    word-stream
 ```
 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
