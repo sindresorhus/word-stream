@@ -1,6 +1,6 @@
 {
   "name": "word-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns a stream of English words",
   "license": "MIT",
   "bin": "cli.js",
