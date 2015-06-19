@@ -7,7 +7,7 @@ Useful if you're creating a word game or just want some words to work with.
 
 ## Install
 
-```sh
+```
 $ npm install --save word-stream
 ```
 
@@ -41,15 +41,15 @@ toArray(wordStream, function (wordArray) {
 
 ## CLI
 
-```sh
+```
 $ npm install --global word-stream
 ```
 
-```sh
+```
 $ word-stream --help
 
   Usage
-    word-stream
+    $ word-stream
 ```
 
 

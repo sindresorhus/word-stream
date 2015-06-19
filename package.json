@@ -3,13 +3,13 @@
   "version": "1.0.1",
   "description": "Returns a stream of English words",
   "license": "MIT",
-  "bin": "cli.js",
   "repository": "sindresorhus/word-stream",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
+  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -23,7 +23,6 @@
   "keywords": [
     "cli-app",
     "cli",
-    "bin",
     "word",
     "words",
     "word-stream",
@@ -35,7 +34,7 @@
     "dictionary"
   ],
   "dependencies": {
-    "meow": "^3.1.0",
+    "meow": "^3.3.0",
     "split": "^0.3.0",
     "word-list": "^1.0.0"
   },
