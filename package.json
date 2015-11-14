@@ -34,8 +34,8 @@
     "dictionary"
   ],
   "dependencies": {
-    "meow": "^3.3.0",
-    "split": "^0.3.0",
+    "meow": "^3.5.0",
+    "split": "^1.0.0",
     "word-list": "^1.0.0"
   },
   "devDependencies": {
