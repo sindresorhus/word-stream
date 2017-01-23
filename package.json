@@ -1,6 +1,6 @@
 {
   "name": "word-stream",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Returns a stream of English words",
   "license": "MIT",
   "repository": "sindresorhus/word-stream",
