@@ -15,44 +15,33 @@ $ npm install --save word-stream
 ## Usage
 
 ```js
-var wordStream = require('word-stream');
+const wordStream = require('word-stream');
 
-wordStream.on('data', function (word) {
+wordStream.on('data', word => {
 	console.log(word);
 });
-//=> ...
+//=> …
 //=> abmhos
 //=> abnegate
-//=> ...
+//=> …
 ```
 
-You can get all the words at once by using [stream-to-array](https://github.com/stream-utils/stream-to-array):
+
+## Tip
+
+You can get all the words at once by using [`get-stream`](https://github.com/sindresorhus/get-stream):
 
 ```js
-var toArray = require('stream-to-array');
-var wordStream = require('word-stream');
+const getStream = require('get-stream');
+const wordStream = require('word-stream');
 
-toArray(wordStream, function (wordArray) {
-	console.log(wordArray);
-	//=> [..., 'abmhos', 'abnegate', ...]
+getStream.array(wordStream).then(words =>
+	console.log(words);
+	//=> […, 'abmhos', 'abnegate', …]
 });
-```
-
-
-## CLI
-
-```
-$ npm install --global word-stream
-```
-
-```
-$ word-stream --help
-
-  Usage
-    $ word-stream
 ```
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

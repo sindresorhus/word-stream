@@ -1,11 +1,10 @@
-'use strict';
-var assert = require('assert');
-var wordStream = require('./');
+import test from 'ava';
+import m from './';
 
-it('should return words', function (cb) {
-	wordStream.on('data', function (word) {
-		assert(word.length > 1);
+test.cb(t => {
+	m.on('data', function (word) {
+		t.true(word.length > 1);
 		this.pause();
-		cb();
+		t.end();
 	});
 });

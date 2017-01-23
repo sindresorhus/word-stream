@@ -9,36 +9,31 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
-  "bin": "cli.js",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
     "word",
     "words",
-    "word-stream",
-    "list",
     "stream",
+    "list",
     "en",
     "english",
     "dict",
     "dictionary"
   ],
   "dependencies": {
-    "meow": "^3.5.0",
-    "split": "^1.0.0",
-    "word-list": "^1.0.0"
+    "binary-split": "^1.0.3",
+    "word-list": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*",
+    "xo": "*"
   }
 }
