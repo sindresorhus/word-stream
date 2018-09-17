@@ -1,10 +1,8 @@
 import test from 'ava';
-import m from './';
+import pEvent from 'p-event';
+import wordStream from '.';
 
-test.cb(t => {
-	m.on('data', function (word) {
-		t.true(word.length > 1);
-		this.pause();
-		t.end();
-	});
+test('main', async t => {
+	const word = await pEvent(wordStream, 'data');
+	t.true(word.length > 1);
 });

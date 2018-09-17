@@ -8,7 +8,7 @@ Useful if you're creating a word game or just want some words to work with.
 ## Install
 
 ```
-$ npm install --save word-stream
+$ npm install word-stream
 ```
 
 
@@ -35,10 +35,10 @@ You can get all the words at once by using [`get-stream`](https://github.com/sin
 const getStream = require('get-stream');
 const wordStream = require('word-stream');
 
-getStream.array(wordStream).then(words => {
-	console.log(words);
+(async () => {
+	console.log(await getStream.array(wordStream));
 	//=> […, 'abmhos', 'abnegate', …]
-});
+})();
 ```
 
 
