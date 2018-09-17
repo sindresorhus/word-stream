@@ -35,7 +35,7 @@ You can get all the words at once by using [`get-stream`](https://github.com/sin
 const getStream = require('get-stream');
 const wordStream = require('word-stream');
 
-getStream.array(wordStream).then(words =>
+getStream.array(wordStream).then(words => {
 	console.log(words);
 	//=> […, 'abmhos', 'abnegate', …]
 });
