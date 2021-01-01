@@ -1,4 +1,4 @@
-# word-stream [![Build Status](https://travis-ci.org/sindresorhus/word-stream.svg?branch=master)](https://travis-ci.org/sindresorhus/word-stream)
+# word-stream
 
 > Returns a stream of English words from the [Letterpress Word List](https://github.com/atebits/Words/blob/master/Words/en.txt)
 
