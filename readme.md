@@ -4,20 +4,18 @@
 
 Useful if you're creating a word game or just want some words to work with.
 
-
 ## Install
 
+```sh
+npm install word-stream
 ```
-$ npm install word-stream
-```
-
 
 ## Usage
 
 ```js
-const wordStream = require('word-stream');
+import wordStream from 'word-stream';
 
-wordStream.on('data', word => {
+wordStream().on('data', word => {
 	console.log(word);
 });
 //=> …
@@ -26,22 +24,14 @@ wordStream.on('data', word => {
 //=> …
 ```
 
-
 ## Tip
 
 You can get all the words at once by using [`get-stream`](https://github.com/sindresorhus/get-stream):
 
 ```js
-const getStream = require('get-stream');
-const wordStream = require('word-stream');
+import wordStream from 'word-stream';
+import {getStreamAsArray} from 'get-stream';
 
-(async () => {
-	console.log(await getStream.array(wordStream));
-	//=> […, 'abmhos', 'abnegate', …]
-})();
+console.log(await getStreamAsArray(wordStream()));
+//=> […, 'abmhos', 'abnegate', …]
 ```
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

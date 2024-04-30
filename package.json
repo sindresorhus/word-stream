@@ -4,13 +4,17 @@
 	"description": "Returns a stream of English words",
 	"license": "MIT",
 	"repository": "sindresorhus/word-stream",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
+	"sideEffects": false,
 	"engines": {
-		"node": ">=6"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -29,12 +33,12 @@
 		"dictionary"
 	],
 	"dependencies": {
-		"binary-split": "^1.0.3",
-		"word-list": "^2.0.0"
+		"binary-split": "^1.0.5",
+		"word-list": "^4.0.0"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
-		"p-event": "^2.1.0",
-		"xo": "^0.23.0"
+		"ava": "^6.1.2",
+		"p-event": "^6.0.1",
+		"xo": "^0.58.0"
 	}
 }

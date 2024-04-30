@@ -1,6 +1,7 @@
-'use strict';
-const fs = require('fs');
-const binarySlit = require('binary-split');
-const wordListPath = require('word-list');
+import fs from 'node:fs';
+import binarySlit from 'binary-split';
+import wordListPath from 'word-list';
 
-module.exports = fs.createReadStream(wordListPath).pipe(binarySlit());
+export default function wordStream() {
+	return fs.createReadStream(wordListPath).pipe(binarySlit());
+}
